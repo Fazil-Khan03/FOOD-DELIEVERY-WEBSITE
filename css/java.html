@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event listening</title>
+
+    
+</head>
+<body>
+
+
+    <div>
+     <h1>THis is heading</h1>
+     <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, expedita ea nam quia ducimus voluptatibus quaerat at eos quae optio quos hic quisquam? Expedita aperiam in veniam explicabo modi enim, esse incidunt. Tempora doloremque harum fugiat, ipsum praesentium consectetur nihil hic iusto vel eius modi accusantium aperiam sequi magnam  hic facilis dolores, non odio dolor quam prodolore molestiae odio magnam facere architecto aspernatur explicabo. Reprehenderit assumenda animi alias eveniet officia reiciendis harum, omnis asperiores, itaque temporibus consequatur non quam. Molestias quas aliquid harum unde inventore rerum!
+     <span id="time"></span>    
+     </p>
+
+
+
+
+    </div>
+
+
+    <button id="btn" onclick="toggle()">Show/Hide</button>
+
+<script>
+
+function toggle()
+{
+   
+   
+  let para = document.getElementById('para');
+   
+    
+
+   if(para.style.display!='none')
+    para.style.display='none';
+    else
+    para.style.display='block';
+   
+
+
+
+
+
+}
+
+
+function TimeOut()
+{
+    time = new Date();
+    console.log(time);
+    document.getElementById('time').innerHTML=time;
+
+
+
+}
+
+
+</script>
+
+
+
+</body>
+
+
+</html>
